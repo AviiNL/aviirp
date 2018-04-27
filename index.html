@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AviiRP - Discord Bot</title>
+
+	<style>
+	p {
+	    text-align: justify;
+	    text-justify: inter-word;
+	}
+	</style>
+</head>
+<body>
+
+<h2>About</h2>
+<p>
+	AviiRP is a discord bot that transforms a channel into a role playing experience.
+</p>
+<p>
+	Everyone starts out as "Unknown" until they identify themselves with <code>!name &lt;firstname&gt; &lt;lastname&gt;</code>. Every message that is not a command will be removed and replaced by the bot with your first name or Unknown. You can also perform actions using <code>!me &lt;action&gt;</code> which will be replaced by <b><i>FirstName|Unknown [action]</i></b>, note the lack of a colon character. A Game Master (GM) (person with <code>Manage Messages</code> permission) can use <code>!gm &lt;text&gt;</code> to supply the story with context, this is an italic message with no name.
+</p>
+
+<h2>Install</h2>
+<ol>
+<li><a href="https://discordapp.com/api/oauth2/authorize?client_id=438250098619580416&permissions=125968&scope=bot" target="_BLANK">Add to server</a></li>
+<li>Type <code>!story enable</code> in the channel you wish to activate the bot</li>
+<li>Type <code>!help</code> for an up to date list of allowed commands</li>
+<li>(Optional) Create a role that has <code>Manage Messages</code> for Game Masters to control <code>!story</code> and <code>!gm</code></li>
+<li>(Optional) Deny the bot access to any other channel than the channel you want to play in</li>
+</ol>
+
+<h2>Getting Started</h2>
+<p>
+	When the bot has been enabled using <code>!story enable</code> you can supply the story with information using the other <code>!story</code> commands. You can set a title, summary, color, image and icon for the base story to set the mood. When you are finished setting all the parameters you can apply the changes to the story using <code>!story update</code>. Optionally you can add properties to the story using <code>!story property set &lt;key&gt; &lt;value&gt;</code>. For example to set a location for the story. <code>!story property set Location Downtown</code>
+</p>
+
+<h2>Commands</h2>
+
+<p>
+<b>ActionCommands</b><br>
+!roll [dice=1d20] - Roll dice<br>
+</p>
+<p>
+<b>AdminCommands</b><br>
+!clear - Clears the channel log<br>
+!gm &lt;text&gt; - A message from a GM<br>
+</p>
+<p>
+<b>HelpModule</b><br>
+!help - Show list of commands<br>
+</p>
+<p>
+<b>PlayerCommands</b><br>
+!name &lt;firstname&gt; &lt;lastname&gt; - Give your character a first and last name<br>
+!perma [notify=False] - Delete your character<br>
+!me &lt;text&gt; - Perform an action.<br>
+!showid - Show your ID.<br>
+!ooc &lt;text&gt; - Speak out of character<br>
+</p>
+<p>
+<b>story</b><br>
+!story enable - Enable the bot in the current channel<br>
+!story disable - Disable the bot in the current channel<br>
+!story title &lt;value&gt; - Change the title<br>
+!story summary &lt;value&gt; - Update the summary<br>
+!story color &lt;value&gt; - Change the color<br>
+!story icon &lt;value&gt; - Change the icon. Use "" to remove<br>
+!story image &lt;value&gt; - Change the image. Use "" to remove<br>
+!story update - Apply changes to the story card<br>
+</p>
+<p>
+<b>property</b><br>
+!story property set &lt;key&gt; &lt;value&gt; - Set a property on the story card<br>
+!story property remove &lt;key&gt; - Remove a property from the story card<br>
+</p>
+<p>
+<b>stat</b><br>
+!story stat add &lt;stat&gt; - Add a stat for players to use<br>
+!story stat remove &lt;stat&gt; - Remove a stat<br>
+</p>
+
+<h2>Help</h2>
+<p>For questions join my discord <a href="https://discord.gg/uTxXTVt" target="_BLANK">here</a>
+</body>
+</html>
